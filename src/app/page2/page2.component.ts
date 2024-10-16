@@ -14,4 +14,10 @@ import { PieddepageComponent } from "../pieddepage/pieddepage.component";
 })
 export class Page2Component {
 
+  hero1 = "Superman";
+  hero2 = "Batman";
+  hero3 = "Wonder woman";
+  hero4 = "Flash";
+  hero5 = "Green Lantern";
+  hero6 = "Aquaman";
 }

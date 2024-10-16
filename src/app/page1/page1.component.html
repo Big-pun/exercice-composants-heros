@@ -5,9 +5,10 @@
     <div class="flex-col">
         <app-carousel/>
         <div class="flex-hero">
-            <app-hero/>
-            <app-hero/>
-            <app-hero/>
+            @for (hero of heros; track $index) {
+                <app-hero [titre]="hero" />
+            }
+
         </div>
     </div>
 </div>

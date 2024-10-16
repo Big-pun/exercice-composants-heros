@@ -4,6 +4,7 @@ import { RechercheComponent } from "../recherche/recherche.component";
 import { CarouselComponent } from "../carousel/carousel.component";
 import { HeroComponent } from "../hero/hero.component";
 import { PieddepageComponent } from "../pieddepage/pieddepage.component";
+import { HEROS } from '../mocks/heros';
 
 @Component({
   selector: 'app-page1',
@@ -13,5 +14,6 @@ import { PieddepageComponent } from "../pieddepage/pieddepage.component";
   styleUrl: './page1.component.css'
 })
 export class Page1Component {
+  heros: string[] = HEROS;
 
 }
