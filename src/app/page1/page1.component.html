@@ -7,6 +7,8 @@
         <div class="flex-hero">
             @for (hero of heros; track $index) {
                 <app-hero [titre]="hero" />
+            } @empty {
+                <p>Aucun héros</p>
             }
 
         </div>
