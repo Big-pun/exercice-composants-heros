@@ -3,6 +3,7 @@ import { EnteteComponent } from "../entete/entete.component";
 import { RechercheComponent } from "../recherche/recherche.component";
 import { Hero2Component } from "../hero2/hero2.component";
 import { PieddepageComponent } from "../pieddepage/pieddepage.component";
+import { HEROS } from '../mocks/heros';
 
 
 @Component({
@@ -13,11 +14,5 @@ import { PieddepageComponent } from "../pieddepage/pieddepage.component";
   styleUrl: './page2.component.css'
 })
 export class Page2Component {
-
-  hero1 = "Superman";
-  hero2 = "Batman";
-  hero3 = "Wonder woman";
-  hero4 = "Flash";
-  hero5 = "Green Lantern";
-  hero6 = "Aquaman";
+  heros: string[] = HEROS;
 }

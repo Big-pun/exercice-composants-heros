@@ -3,11 +3,13 @@
 <div class="flex-row">
     <app-recherche/>
     <div class="flex-col">
-        <app-hero2 [titre]="hero1"/>
-        <app-hero2 [titre]="hero2"/>
-        <app-hero2 [titre]="hero3"/>
-        <app-hero2 [titre]="hero4"/>
-        <app-hero2 [titre]="hero5"/>
+        @for (heros of heros; track $index) {
+            <app-hero2 [titre]="heros" />
+        }
+        @empty {
+            <p>Aucun héros</p>
+        }
+        
     </div>
 </div>
 <app-pieddepage/>
